@@ -12,14 +12,15 @@
  */
 
 let i = prompt('Digite um inteiro entre 1 e 3:');
-let a = prompt('Digite um número real:');
-let b = prompt('Digite mais um número real:');
-let c = prompt('Digite mais um número real:');
+    i = parseInt(i);
 
-i = parseInt(i);
-a = parseFloat(a);
-b = parseFloat(b);
-c = parseFloat(c);
+    let a = prompt('Digite um número real:');
+    let b = prompt('Digite mais um número real:');
+    let c = prompt('Digite mais um número real:');
+
+    a = parseFloat(a);
+    b = parseFloat(b);
+    c = parseFloat(c);
 
 if( i === 1 ) {
 
@@ -74,5 +75,17 @@ if( i === 1 ) {
     }
 
 } else if ( i === 3 ) {
-    console.log('È três');
+
+    if( a > b && a > c ) {
+        alert(`${b} - ${a} -${c}`);
+    }
+
+    if( b > a && b > c ) {
+        alert(`${a} - ${b} -${c}`);
+    }
+
+    if( c > a && c > b ) {
+        alert(`${a} - ${c} -${n}`);
+    }
+
 }
